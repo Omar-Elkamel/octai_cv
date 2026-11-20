@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>أوكتاى | استمارة بيانات السي في</title>
+<meta name="description" content="املا بياناتك وابعتها لأوكتاى على الواتساب علشان نجهزلك سي في ATS احترافي.">
+<link rel="icon" id="fav" href="data:,">
+<meta property="og:title" content="أوكتاى | استمارة بيانات السي في">
+<meta property="og:description" content="املا بياناتك في دقايق وابعتها على الواتساب.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FCCC46;--d:#232323;--d2:#2E2E2E;--d3:#383838;--ink:#1A1A1A;--mut:#A8A8A8}
+*{box-sizing:border-box}
+body{margin:0;font-family:Cairo,sans-serif;color:#fff;background-color:var(--d);background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.018) 0 2px,transparent 2px 6px)}
+.h{font-family:'Baloo Bhaijaan 2',Cairo,sans-serif;font-weight:800}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px 120px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none}
+.brand img{width:46px;height:46px}
+.brand b{font-size:24px}
+.back{color:var(--y);text-decoration:none;font-weight:700;font-size:14px;border:1.5px solid #555;border-radius:12px;padding:8px 14px}
+.hero{display:flex;align-items:center;gap:18px;background:var(--d2);border-radius:22px;padding:22px;margin:6px 0 22px;border:1px solid #3a3a3a}
+.hero img{width:86px;flex:none;animation:floaty 3.6s ease-in-out infinite}
+.hero h1{margin:0 0 6px;font-size:28px;line-height:1.3}
+.hero h1 span{color:var(--y)}
+.hero p{margin:0;color:#ddd;line-height:1.8;font-size:15px}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.prog{position:sticky;top:0;z-index:5;background:rgba(35,35,35,.94);backdrop-filter:blur(6px);padding:10px 0 12px;margin-bottom:8px}
+.prog .bar{height:8px;background:#3a3a3a;border-radius:9px;overflow:hidden}
+.prog .bar i{display:block;height:100%;width:0;background:var(--y);border-radius:9px;transition:width .35s}
+.prog small{display:block;color:var(--mut);margin-top:6px;font-size:13px}
+.card{background:var(--d2);border:1px solid #3a3a3a;border-radius:20px;padding:20px;margin-bottom:18px;animation:pop .5s both}
+.card h2{display:flex;align-items:center;gap:10px;margin:0 0 4px;font-size:20px}
+.card h2 .n{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:10px;background:var(--y);color:var(--ink);font-size:16px;flex:none}
+.card .hint{color:var(--mut);font-size:13.5px;margin:0 0 14px;line-height:1.7}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px}
+.full{grid-column:1/-1}
+label{display:block;font-weight:700;font-size:14px;margin-bottom:6px}
+label em{color:var(--y);font-style:normal}
+label small{color:var(--mut);font-weight:400}
+input,select,textarea{width:100%;font-family:Cairo,sans-serif;font-size:16px;color:#fff;background:var(--d);border:1.5px solid #4a4a4a;border-radius:12px;padding:11px 13px;outline:none;transition:border-color .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--y)}
+input[type=email],input[type=tel],input[type=url]{direction:ltr;text-align:right}
+textarea{min-height:84px;resize:vertical;line-height:1.7}
+select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--y) 50%),linear-gradient(135deg,var(--y) 50%,transparent 50%);background-position:16px 50%,22px 50%;background-size:6px 6px;background-repeat:no-repeat;padding-left:34px}
+.bad{border-color:#e5534b!important}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{margin:0;cursor:pointer}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-block;padding:9px 16px;border-radius:12px;border:1.5px solid #4a4a4a;font-weight:600;font-size:14.5px;transition:all .2s}
+.chips input:checked+span{background:var(--y);border-color:var(--y);color:var(--ink);font-weight:800}
+.chips input:focus-visible+span{outline:2px solid #fff}
+.item{position:relative;background:var(--d);border:1px dashed #555;border-radius:16px;padding:16px;margin-bottom:12px;animation:pop .35s both}
+.item .ttl{font-weight:800;color:var(--y);margin-bottom:10px;font-size:15px}
+.rm{position:absolute;left:12px;top:10px;background:none;border:0;color:#e5534b;font-family:Cairo;font-weight:700;cursor:pointer;font-size:14px}
+.row2{display:flex;gap:8px}
+.row2 select{flex:1}
+.now{display:flex;align-items:center;gap:8px;margin-top:8px;font-weight:600;font-size:14px;cursor:pointer}
+.now input{width:18px;height:18px;accent-color:var(--y)}
+.add{width:100%;background:transparent;color:var(--y);border:1.5px dashed var(--y);border-radius:14px;padding:12px;font-family:Cairo;font-weight:800;font-size:15px;cursor:pointer}
+.add:hover{background:rgba(252,204,70,.08)}
+.fresh{display:flex;align-items:center;gap:10px;background:rgba(252,204,70,.1);border:1px solid rgba(252,204,70,.35);border-radius:14px;padding:12px 14px;margin-bottom:14px;cursor:pointer;font-weight:700}
+.fresh input{width:20px;height:20px;accent-color:var(--y);flex:none}
+.fresh small{display:block;font-weight:400;color:#ddd}
+.send{position:fixed;bottom:0;left:0;right:0;z-index:10;background:rgba(35,35,35,.96);backdrop-filter:blur(6px);border-top:1px solid #3a3a3a;padding:12px 16px}
+.send .in{max-width:760px;margin:0 auto;display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:Cairo;font-weight:800;font-size:16px;border-radius:14px;min-height:52px;border:0;cursor:pointer;text-decoration:none;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.wa{flex:1;background:#25D366;color:#fff}
+.cp{background:transparent;color:#fff;border:1.5px solid #6B6B6B;padding:0 16px}
+.note{color:var(--mut);font-size:13.5px;text-align:center;line-height:1.8;margin:6px 0 0}
+.toast{position:fixed;bottom:90px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--y);color:var(--ink);font-weight:800;padding:10px 18px;border-radius:12px;opacity:0;transition:all .3s;z-index:20;pointer-events:none}
+.toast.on{opacity:1;transform:translateX(-50%)}
+.err{color:#ff8a84;font-size:13px;margin-top:4px;display:none}
+.err.on{display:block}
+footer{text-align:center;color:var(--mut);font-size:13px;margin-top:24px}
+footer a{color:var(--y)}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero{flex-direction:column;text-align:center;padding:18px}.hero h1{font-size:24px}.brand b{font-size:20px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <a class="brand" href="./"><img class="ofav" alt="" style="visibility:hidden"><b class="h">أوكتاى</b></a>
+  <a class="back" href="./">التصميمات والأسعار ←</a>
+</header>
+
+<div class="hero">
+  <img id="masc" alt="أوكتاى" style="visibility:hidden">
+  <div>
+    <h1 class="h">ابعتلنا بياناتك <span>في دقايق</span></h1>
+    <p>املا البيانات اللي عندك واضغط "ابعت على الواتساب"، وهتوصلنا مترتبة على طول. أي حاجة مش عندك سيبها فاضية.</p>
+  </div>
+</div>
+
+<div class="prog"><div class="bar"><i id="pbar"></i></div><small id="ptxt">ابدأ بالبيانات الشخصية</small></div>
+
+<form id="f" novalidate autocomplete="on">
+
+<section class="card">
+  <h2 class="h"><span class="n">1</span>البيانات الشخصية</h2>
+  <p class="hint">الحقول اللي عليها <b style="color:var(--y)">*</b> مطلوبة.</p>
+  <div class="grid">
+    <div class="full"><label for="name">الاسم بالكامل <em>*</em></label><input id="name" name="name" autocomplete="name" placeholder="مثلًا: أحمد محمد علي حسن"><div class="err" id="e-name">اكتب اسمك بالكامل</div></div>
+    <div><label for="phone">رقم التليفون <em>*</em></label><input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx"><div class="err" id="e-phone">اكتب رقم تليفون صحيح</div></div>
+    <div><label for="email">البريد الإلكتروني</label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@gmail.com"></div>
+    <div><label for="addr">العنوان</label><input id="addr" name="addr" autocomplete="address-level2" placeholder="مثلًا: المنصورة، الدقهلية"></div>
+    <div><label for="dob">تاريخ الميلاد</label><input id="dob" name="dob" type="date"></div>
+    <div class="full"><label for="li">لينكد إن <small>(لو موجود)</small></label><input id="li" name="li" type="url" placeholder="linkedin.com/in/..."></div>
+    <div class="full"><label>الموقف من التجنيد <small>(للذكور)</small></label>
+      <div class="chips" data-name="army">
+        <label><input type="radio" name="army" value="أدى الخدمة"><span>أدى الخدمة</span></label>
+        <label><input type="radio" name="army" value="معفى"><span>معفى</span></label>
+        <label><input type="radio" name="army" value="مؤجل"><span>مؤجل</span></label>
+        <label><input type="radio" name="army" value="لا ينطبق"><span>لا ينطبق</span></label>
+      </div></div>
+    <div class="full"><label>الحالة الاجتماعية</label>
+      <div class="chips">
+        <label><input type="radio" name="marital" value="أعزب"><span>أعزب</span></label>
+        <label><input type="radio" name="marital" value="متزوج"><span>متزوج</span></label>
+      </div></div>
+    <div class="full"><label>رخصة القيادة</label>
+      <div class="chips">
+        <label><input type="radio" name="lic" value="لا يوجد"><span>لا يوجد</span></label>
+        <label><input type="radio" name="lic" value="خاصة"><span>خاصة</span></label>
+        <label><input type="radio" name="lic" value="مهنية"><span>مهنية</span></label>
+      </div>
+      <div id="licDegW" style="display:none;margin-top:10px"><select id="licDeg"><option value="">درجة الرخصة المهنية</option><option>درجة أولى</option><option>درجة ثانية</option><option>درجة ثالثة</option></select></div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2 class="h"><span class="n">2</span>الوظيفة المستهدفة</h2>
+  <p class="hint">لو معاك إعلان وظيفة معيّن، حط اللينك أو انسخ الإعلان، وهنظبط السي في عليه.</p>
+  <div class="grid">
+    <div class="full"><label for="job">الوظيفة أو المجال اللي بتقدّم فيه</label><input id="job" name="job" placeholder="مثلًا: محاسب، مهندس مدني، خدمة عملاء"></div>
+    <div class="full"><label for="jobad">إعلان الوظيفة <small>(اختياري)</small></label><textarea id="jobad" name="jobad" placeholder="لينك الإعلان أو نصه"></textarea></div>
+  </div>
+</section>
+
+<section class="card">
+  <h2 class="h"><span class="n">3</span>المؤهل الدراسي</h2>
+  <p class="hint">لو عندك أكتر من مؤهل، اضغط "ضيف مؤهل".</p>
+  <div id="edus"></div>
+  <button type="button" class="add" id="addEdu">+ ضيف مؤهل</button>
+</section>
+
+<section class="card">
+  <h2 class="h"><span class="n">4</span>الخبرات المهنية</h2>
+  <p class="hint">ابدأ بآخر شغل ليك. الإنجازات اختيارية، ولو عندك أرقام اكتبها (مثلًا: زودت المبيعات 20%).</p>
+  <label class="fresh"><input type="checkbox" id="fresh"><span>أنا حديث التخرج ومعنديش خبرة<small>مفيش مشكلة، هنبرز دراستك وتدريباتك.</small></span></label>
+  <div id="expW"><div id="exps"></div><button type="button" class="add" id="addExp">+ ضيف وظيفة</button></div>
+</section>
+
+<section class="card">
+  <h2 class="h"><span class="n">5</span>الدورات والتدريبات</h2>
+  <p class="hint">بما فيها تدريبات الكلية والتدريب الصيفي.</p>
+  <div id="crs"></div>
+  <button type="button" class="add" id="addCrs">+ ضيف دورة</button>
+</section>
+
+<section class="card">
+  <h2 class="h"><span class="n">6</span>اللغات</h2>
+  <div class="grid">
+    <div><label>العربية</label><input value="اللغة الأم" disabled></div>
+    <div><label for="en">الإنجليزية</label><select id="en"><option value="">اختار المستوى</option><option>ممتاز</option><option>جيد جدًا</option><option>جيد</option><option>مبتدئ</option></select></div>
+    <div class="full"><label for="ol">لغات تانية <small>(مع المستوى)</small></label><input id="ol" placeholder="مثلًا: الفرنسية - جيد"></div>
+  </div>
+</section>
+
+<p class="note">بعد ما تبعت البيانات، لو عندك سي في قديم ابعته في نفس الشات، بيسهّل علينا الشغل 👍<br>بياناتك بتتحفظ على جهازك لحد ما تبعتها، فلو قفلت الصفحة هتلاقيها.</p>
+</form>
+
+<footer>أوكتاى · هنخليك دايمًا مميز · <a href="https://wa.me/201159327495">01159327495</a></footer>
+</div>
+
+<div class="send"><div class="in">
+  <button class="btn wa" id="go" type="button"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.900-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.2-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.2 1.2z"/></svg>ابعت على الواتساب</button>
+  <button class="btn cp" id="cp" type="button">نسخ</button>
+</div></div>
+<div class="toast" id="toast"></div>
+
+<script>
+var WA='201159327495';
+var MONTHS=['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+var NOW_Y=new Date().getFullYear();
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s).replace(/"/g,'&quot;')}
+function yearOpts(ph,from){var h='<option value="">'+ph+'</option>';for(var y=NOW_Y+1;y>=from;y--)h+='<option>'+y+'</option>';return h}
+function monOpts(){var h='<option value="">الشهر</option>';for(var i=0;i<12;i++)h+='<option value="'+(i+1)+'">'+MONTHS[i]+'</option>';return h}
+
+function eduHTML(){return '<div class="grid">'+
+ '<div class="full"><label>الشهادة والتخصص</label><input data-k="deg" placeholder="مثلًا: بكالوريوس تجارة - محاسبة"></div>'+
+ '<div class="full"><label>الجامعة أو المعهد</label><input data-k="uni" placeholder="مثلًا: جامعة المنصورة"></div>'+
+ '<div><label>سنة التخرج</label><select data-k="year">'+yearOpts('اختار السنة',1975)+'</select></div>'+
+ '<div><label>التقدير</label><select data-k="grade"><option value="">اختار التقدير</option><option>امتياز</option><option>جيد جدًا</option><option>جيد</option><option>مقبول</option><option>لسه بدرس</option></select></div></div>'}
+function expHTML(){return '<div class="grid">'+
+ '<div><label>من</label><div class="row2"><select data-k="fm">'+monOpts()+'</select><select data-k="fy">'+yearOpts('السنة',1975)+'</select></div></div>'+
+ '<div><label>إلى</label><div class="row2 to"><select data-k="tm">'+monOpts()+'</select><select data-k="ty">'+yearOpts('السنة',1975)+'</select></div>'+
+ '<label class="now"><input type="checkbox" data-k="now">لحد دلوقتي</label></div>'+
+ '<div><label>اسم الشركة ومكانها</label><input data-k="co" placeholder="مثلًا: فودافون - القاهرة"></div>'+
+ '<div><label>المسمى الوظيفي</label><input data-k="title" placeholder="مثلًا: محاسب"></div>'+
+ '<div class="full"><label>إنجازات <small>(اختياري)</small></label><textarea data-k="ach" placeholder="مثلًا: كنت مسؤول عن فريق 5 أفراد"></textarea></div></div>'}
+function crsHTML(){return '<div class="grid">'+
+ '<div class="full"><label>اسم الدورة أو التدريب</label><input data-k="name" placeholder="مثلًا: ICDL"></div>'+
+ '<div><label>المكان أو الجهة</label><input data-k="org" placeholder="مثلًا: جامعة عين شمس"></div>'+
+ '<div><label>التاريخ</label><div class="row2"><select data-k="m">'+monOpts()+'</select><select data-k="y">'+yearOpts('السنة',1990)+'</select></div></div></div>'}
+
+var LISTS={edus:{html:eduHTML,t:'مؤهل'},exps:{html:expHTML,t:'وظيفة'},crs:{html:crsHTML,t:'دورة'}};
+function addItem(list,data,silent){
+  var box=$(list),d=document.createElement('div');d.className='item';
+  d.innerHTML='<div class="ttl"></div><button type="button" class="rm">حذف ✕</button>'+LISTS[list].html();
+  box.appendChild(d);
+  d.querySelector('.rm').onclick=function(){d.remove();renum(list);save()};
+  var nw=d.querySelector('[data-k=now]');
+  if(nw)nw.onchange=function(){d.querySelector('.to').style.opacity=nw.checked?.35:1;d.querySelectorAll('.to select').forEach(function(s){s.disabled=nw.checked})};
+  if(data)Object.keys(data).forEach(function(k){var el=d.querySelector('[data-k='+k+']');if(!el)return;if(el.type=='checkbox'){el.checked=!!data[k];el.onchange&&el.onchange()}else el.value=data[k]});
+  renum(list);
+  if(!silent){var f=d.querySelector('input,select');f&&f.focus()}
+}
+function renum(list){var it=$(list).querySelectorAll('.item');it.forEach(function(d,i){d.querySelector('.ttl').textContent=LISTS[list].t+' '+(i+1);d.querySelector('.rm').style.display=it.length>1?'':'none'})}
+function readList(list){return Array.prototype.map.call($(list).querySelectorAll('.item'),function(d){var o={};d.querySelectorAll('[data-k]').forEach(function(el){o[el.dataset.k]=el.type=='checkbox'?el.checked:el.value.trim()});return o})}
+function radio(n){var r=document.querySelector('input[name='+n+']:checked');return r?r.value:''}
+function setRadio(n,v){var r=document.querySelector('input[name='+n+'][value="'+v+'"]');if(r)r.checked=true}
+
+$('addEdu').onclick=function(){addItem('edus')};
+$('addExp').onclick=function(){addItem('exps')};
+$('addCrs').onclick=function(){addItem('crs')};
+document.querySelectorAll('input[name=lic]').forEach(function(r){r.addEventListener('change',function(){$('licDegW').style.display=radio('lic')=='مهنية'?'':'none'})});
+$('fresh').onchange=function(){$('expW').style.display=this.checked?'none':''};
+
+var FIELDS=['name','phone','email','addr','dob','li','job','jobad','en','ol','licDeg'];
+function collect(){var o={};FIELDS.forEach(function(k){o[k]=$(k).value.trim()});
+ o.army=radio('army');o.marital=radio('marital');o.lic=radio('lic');o.fresh=$('fresh').checked;
+ o.edus=readList('edus');o.exps=readList('exps');o.crs=readList('crs');return o}
+function save(){try{localStorage.setItem('octai_form',JSON.stringify(collect()))}catch(e){}progress()}
+function load(){var o=null;try{o=JSON.parse(localStorage.getItem('octai_form')||'null')}catch(e){}
+ if(!o){addItem('edus',null,1);addItem('exps',null,1);addItem('crs',null,1);return}
+ FIELDS.forEach(function(k){if(o[k])$(k).value=o[k]});
+ ['army','marital','lic'].forEach(function(n){if(o[n])setRadio(n,o[n])});
+ $('licDegW').style.display=o.lic=='مهنية'?'':'none';
+ $('fresh').checked=!!o.fresh;$('fresh').onchange();
+ [['edus',o.edus],['exps',o.exps],['crs',o.crs]].forEach(function(p){var a=p[1]&&p[1].length?p[1]:[null];a.forEach(function(d){addItem(p[0],d,1)})});
+}
+function progress(){var o=collect(),need=[o.name,o.phone,o.addr,o.email,o.job,o.edus[0]&&o.edus[0].deg,o.en,o.army||o.marital,o.fresh||(o.exps[0]&&o.exps[0].title)];
+ var done=need.filter(Boolean).length,p=Math.round(done/need.length*100);
+ $('pbar').style.width=p+'%';$('ptxt').textContent=p<100?('مكتمل '+p+'%'):'تمام كده 👌 اضغط "ابعت على الواتساب"'}
+
+function dm(m,y){if(!y)return '';return (m?MONTHS[m-1]+' ':'')+y}
+function build(){var o=collect(),L=[];
+ function add(k,v){if(v)L.push(k+': '+v)}
+ L.push('*بيانات السي في - أوكتاى*','');
+ L.push('📌 *البيانات الشخصية*');
+ add('الاسم',o.name);add('التليفون',o.phone);add('الإيميل',o.email);add('العنوان',o.addr);
+ if(o.dob){var p=o.dob.split('-');add('تاريخ الميلاد',p[2]+'/'+p[1]+'/'+p[0])}
+ add('لينكد إن',o.li);add('التجنيد',o.army);add('الحالة الاجتماعية',o.marital);
+ add('رخصة القيادة',o.lic+(o.lic=='مهنية'&&o.licDeg?' - '+o.licDeg:''));
+ if(o.job||o.jobad){L.push('','🎯 *الوظيفة المستهدفة*');add('الوظيفة',o.job);add('الإعلان',o.jobad)}
+ var ed=o.edus.filter(function(e){return e.deg||e.uni});
+ if(ed.length){L.push('','🎓 *المؤهلات*');ed.forEach(function(e){L.push('- '+[e.deg,e.uni,e.year,e.grade].filter(Boolean).join(' | '))})}
+ if(o.fresh){L.push('','💼 *الخبرات*','حديث التخرج - معنديش خبرة')}
+ else{var ex=o.exps.filter(function(e){return e.co||e.title});
+  if(ex.length){L.push('','💼 *الخبرات المهنية*');ex.forEach(function(e,i){
+   var to=e.now?'حتى الآن':dm(e.tm,e.ty);var dt=[dm(e.fm,e.fy),to].filter(Boolean).join(' - ');
+   L.push((i+1)+') '+[e.title,e.co].filter(Boolean).join(' - '));if(dt)L.push('   '+dt);if(e.ach)L.push('   الإنجازات: '+e.ach)})}}
+ var cr=o.crs.filter(function(c){return c.name});
+ if(cr.length){L.push('','📚 *الدورات والتدريبات*');cr.forEach(function(c){L.push('- '+[c.name,c.org,dm(c.m,c.y)].filter(Boolean).join(' | '))})}
+ L.push('','🌍 *اللغات*','العربية: اللغة الأم');add('الإنجليزية',o.en);add('لغات تانية',o.ol);
+ return L.join('\n')}
+
+function check(){var ok=true,first=null;
+ [['name',function(v){return v.length>=5}],['phone',function(v){return v.replace(/\D/g,'').length>=10}]].forEach(function(p){var el=$(p[0]),g=p[1](el.value.trim());
+  el.classList.toggle('bad',!g);$('e-'+p[0]).classList.toggle('on',!g);if(!g&&!first)first=el;ok=ok&&g});
+ if(first){first.scrollIntoView({behavior:'smooth',block:'center'});setTimeout(function(){first.focus()},400)}
+ return ok}
+function toast(t){var e=$('toast');e.textContent=t;e.classList.add('on');setTimeout(function(){e.classList.remove('on')},2200)}
+
+$('go').onclick=function(){if(!check())return toast('كمّل البيانات المطلوبة');save();
+ if(typeof fbq=='function')try{fbq('track','Lead')}catch(e){}
+ window.location.href='https://wa.me/'+WA+'?text='+encodeURIComponent(build())};
+$('cp').onclick=function(){if(!check())return toast('كمّل البيانات المطلوبة');var t=build();
+ function fb(){var a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(e){}a.remove();toast('اتنسخت ✔ الصقها في الواتساب')}
+ if(navigator.clipboard)navigator.clipboard.writeText(t).then(function(){toast('اتنسخت ✔ الصقها في الواتساب')},fb);else fb()};
+document.addEventListener('input',function(e){if(e.target.classList.contains('bad')){e.target.classList.remove('bad');var er=$('e-'+e.target.id);er&&er.classList.remove('on')}save()});
+document.addEventListener('change',save);
+load();progress();
+fetch('./').then(function(r){return r.text()}).then(function(t){
+ var m=t.match(/class="mascot" src="(data:[^"]+)"/),f=t.match(/rel="icon" href="(data:[^"]+)"/);
+ if(m){var e=$('masc');e.src=m[1];e.style.visibility=''}
+ if(f){$('fav').href=f[1];document.querySelectorAll('.ofav').forEach(function(e){e.src=f[1];e.style.visibility=''})}
+}).catch(function(){});
+
+</script>
+</body>
+</html>
